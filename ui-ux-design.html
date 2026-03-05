@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design | Asif Ansari</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <!-- Separate CSS file link -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: text-shadow 0.3s ease;
+        }
+
+        .back-btn:hover {
+            text-shadow: 0 0 15px var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Asif<span>Ansari</span></div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page-content" style="padding-left: 5%; padding-right: 5%;">
+        <a href="index.html#portfolio" class="back-btn">&larr; Back to Portfolio</a>
+        <div class="glass-panel">
+            <h1>UI/UX Design</h1>
+            <p style="font-size: 1.25rem; line-height: 1.8; color: #dcdcdc; margin-top: 2rem;">
+                Designing intuitive, user-centric interfaces that do not compromise on aesthetics. I focus on creating
+                seamless user journeys paired with gorgeous, modern visual designs that engage and delight.
+            </p>
+            <p style="font-size: 1.25rem; line-height: 1.8; color: #dcdcdc; margin-top: 2rem;">
+                My process includes wireframing, prototyping, and high-fidelity UI design, ensuring that every
+                interaction is meaningful and every screen looks pixel-perfect.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <h3>Asif Ansari</h3>
+            <p>Graphic Designer</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Behance</a>
+                <a href="#">Dribbble</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asif Ansari. All rights reserved. Crafted with stunning 3D aesthetics.</p>
+        </div>
+    </footer>
+
+    <!-- Three.js and GSAP for 3D Scroll Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Separate JS file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
